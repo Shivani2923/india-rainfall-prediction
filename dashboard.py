@@ -19,10 +19,9 @@ st.set_page_config(
 # ------------------------------------------------------------
 
 PROJECT_DIR = Path(__file__).resolve().parent
-DATA_DIR = PROJECT_DIR / "data" / "datasets"
 
-ds1_path = DATA_DIR / "rainfall in india 1901-2015.csv"
-ds2_path = DATA_DIR / "district_wise_rainfall_normal[1].csv"
+ds1_path = PROJECT_DIR / "rainfall in india 1901-2015.csv"
+ds2_path = PROJECT_DIR / "district_wise_rainfall_normal[1].csv"
 
 df1 = pd.read_csv(ds1_path)
 df2 = pd.read_csv(ds2_path)
